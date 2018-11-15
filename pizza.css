@@ -1,0 +1,31 @@
+h1,h2{text-align:center; }
+.cart{padding:10px;}
+.cartbutton{font-size: 20px; padding:4px; width:40px;}
+.carousel{margin:10px;}
+.container{width:100%; height:500px; border:1px solid black; text-align:center; margin:20px auto;  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);}
+.spizza,.mpizza,.lpizza{width:300px; height:350px;  float:left; margin:34px;}
+.price{position:relative; top:-50px; font-weight:bold; color:black; }
+.hard{position:relative; right:200px;}
+.replace1{width:1140px; height:400px; margin:20 auto; position:relative;}
+.accordion1{height:100px;}
+.accordion2{height:50px;}
+input[type=text]{width:40px;}
+button{margin:10px;}
+input[id=change]{width:150px;}
+.important{margin:10px auto; border:1px solid black; width:600px; height:600px; padding:30px; background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);}
+input[type=number]{width:60px;}
+input[id=total]{width:100px; text-align:center;}
+input[id=total1]{width:100px; text-align:center;}
+input[id=total2]{width:100px; text-align:center;}
+input[id=total3]{width:100px; text-align:center;}
+.dialog{width:300px; height:400px;}
+.dialog1,.dialog2,.dialog3,.dialog4,.dialog5,.dialog6{margin:5px; padding:5px;}
+input[class=dial1]{width:80px; text-align:center;}
+input[class=dial2]{width:80px; text-align:center;}
+input[class=dial3]{width:80px; text-align:center;}
+input[class=dial4]{width:80px; text-align:center;}
+input[class=dial5]{width:80px; text-align:center;}
+#shame{position: relative; left:680px; padding:10px; font-size:10px; top:0x;}
+
+
+

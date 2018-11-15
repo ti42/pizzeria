@@ -1,0 +1,357 @@
+<html>
+    <head>
+       <!--Bootstrap cdn-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+   
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!--This is font awesome cdn-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+     <!--Jquery cdn--> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <!--Css link connecting the css file-->
+        <link href="pizza.css" rel="stylesheet"/>
+
+        <!--Jquery ui cdn-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>jQuery UI Dialog - Default functionality</title>
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <link rel="stylesheet" href="/resources/demos/style.css">
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+        <link type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/themes/south-street/jquery-ui.css" rel="stylesheet">
+
+      
+
+     
+    </head>
+
+    <body>
+      <!--Dialog box using jquery ui-->
+      <div class='dialog' title="Check Order">
+        <div class='dialog1'>Pizza : <input type='text' class='dial1' ></div>
+        <div class='dialog2'>Desert : <input type='text' class='dial2' ></div>
+        <div class='dialog3'>Wings : <input type='text' class='dial3' ></div>
+        <div class='dialog4'>Drinks : <input type='text' class='dial4' ></div>
+        <div class='dialog5'>Tax : 16% </div>
+        <div class='dialog6'>Total : <input type='text' class='dial5' ></div>
+      </div>
+    
+       <!--menu-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" id="menu">
+          <a class="navbar-brand" href="#">Menu</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="nav justify-content-center">
+                        <li class="nav-item">
+                          <a class="nav-link " href="#one" >Pizza</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#two">Wings</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#three">Desert</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link " href="#four">Drinks</a>
+                        </li>
+                      </ul>
+       
+          </div>
+            <div class='hard'><h1>Bayonne Pizzeria</h1></div>
+          
+            <form class="form-inline my-2 my-lg-2">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" id='tooltip' title="You can search for items here"/>
+                <button class="btn btn-outline-success my-4 my-sm-2" type="submit" id='search'>Search</button>
+                <div class='cart'><button type='button' class='cartbutton' title='Cart icon'><i class="fas fa-shopping-cart" ></i></button></div>
+              </form>
+              
+        </nav>
+        <!--slider-->
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                  
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100" src="Picture/Pizza.jpg" height='500'  alt="First slide">
+                    <div class='carousel-caption'> 
+                      <h1 class='display-2'>Pizza</h1>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="Picture/Wings.jpg" height='500'   alt="Second slide">
+                    <div class='carousel-caption'> 
+                      <h1 class='display-2'>Wings</h1>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="Picture/Brownies.jpg" height='500'  alt="Third slide">
+                    <div class='carousel-caption'> 
+                      <h1 class='display-2'>Brownies</h1>
+                    </div>
+                  </div>
+                </div>
+                
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            <!--Pizza-->
+              <div class='container' id='one'> 
+                <h2>Pizza</h2>
+                <div class='spizza'>
+                  <div>Small</div>
+                  <div><img src="Picture/small.jpg" width='300' height='350'>
+                    <div class="price"><button type='button' class="btn btn-success" id='button1'>$5.99</button></div>
+                  </div>
+
+                </div>
+                <div class='mpizza'>
+                    <div>Medium</div>
+                  <div><img src="Picture/medium.jpg" width='300' height='350'></div>
+                  <div class="price"><button type='button' class="btn btn-success" id='button2'>$8.99</button></div>
+
+                  </div>
+                  <div class='lpizza'>
+                      <div>Large</div>
+                  <div><img src="Picture/large.jpg" width='300' height='350'></div>
+                  <div class="price"><button type='button' class="btn btn-success" id='button3'>$12.99</button></div>
+
+                    </div>
+
+              </div>
+              <!--Replace section using tab and accordion-->
+               <div class='replace1'>
+                  <div id="tabs">
+                  <ul>
+                    <li><a href="#tabs-1">Pizza</a></li>
+                    <li><a href="#tabs-2">Wings</a></li>
+                    <li><a href="#tabs-3">Deserts</a></li>
+                    <li><a href="#tabs-4">Drinks</a></li>
+                    <li><button type='button' id='shame' class="btn btn-outline-danger"></button></li>
+                  </ul>
+                  
+                  <div id="tabs-1">
+                    <div>
+                     <form>
+                      <div > <label >Quantity:</label> <input type='text' name='quantity' id='quantity' /> </div>
+                      <label>Size:</label> 
+                      
+                      <label> Small </label> <input type='radio' name='size'  value="5.99" />
+                      <label >Medium </label> <input type='radio' name='size' value="8.99"/>
+                      <label> Large </label> <input type='radio' name='size' value="12.99" />
+                
+                    </div>
+                    <div id='accordion'> 
+                      <h2>Toppings</h2>
+                      <div class='accordion1'>
+                        <label>Veg:</label>
+                        <label>Mushroom</label> <input type='checkbox' name='veg' value='1.25'/>
+                        <label>Olive</label> <input type='checkbox' name='veg' value='1.25'/>
+                        <label>Onion</label> <input type='checkbox' name='veg' value='1.25'/>
+                        <label>Jalapeno</label> <input type='checkbox' name='veg' value='1.25'/>
+                        <label>Bell pepper</label> <input type='checkbox' name='veg' value='1.25'/>
+                        <label>Tomato</label> <input type='checkbox' name='veg' value='1.25'/><br>
+
+                        <label>Non-Veg:</label>
+                        <label>Pepperoni</label> <input type='checkbox' name='veg' value='1.25'/>
+                        <label>Chicken</label> <input type='checkbox' name='veg' value='1.25'/>
+                        <label>Sausage</label> <input type='checkbox' name='veg' value='1.25'/>
+                        <label>Beef</label> <input type='checkbox' name='veg' value='1.25'/>
+                        <label>Ham</label> <input type='checkbox' name='veg' value='1.25'/>
+                 
+                    </div>
+                   <h2>Sauce</h2>
+                   <div class='accordion2'>
+                   <label>Blue Cheese</label> <input type='checkbox' name='veg' value='1.00'/>
+                   <label>Barbeque</label> <input type='checkbox' name='veg' value='1.00'/>
+                   <label>Marinara</label> <input type='checkbox' name='veg' value='1.00'/>
+                  </div>
+
+                  </div>
+                  <div><button type='button' class="btn btn-secondary" id='last'> Add <i class="fas fa-cart-plus"></i> </button> <input type='text' id='total'> </div>
+                  <div><button type='button' class="btn btn-secondary" id='goform'> Continue </button></div>
+
+                  </div>
+
+                  <div id="tabs-2">
+                      <div>
+                          <div> <label>Quantity:</label> </div>
+                          
+                          <label> Boneless </label> <input type='text' name='size' checked='checked'  id='quantity1' />
+                          <label > Spicy Buffolo </label> <input type='text' name='size'  id='quantity2' />
+                          <label> Jalapeno </label> <input type='text' name='size'  id='quantity3' />
+                          <div id='tooltip' title='$0.6/wing'> <i class="fas fa-info"></i></div><br>
+                     
+                          <div id='accord'>
+                          <h2>Sauce</h2>
+                         <div class='accordion2'>
+                         <label>Blue Cheese</label> <input type='checkbox' name='veg' value='1.00'/>
+                         <label>Barbeque</label> <input type='checkbox' name='veg' value='1.00'/>
+                         <label>Marinara</label> <input type='checkbox' name='veg' value='1.00'/>
+                         </div>
+                        </div>
+
+                        <div><button type='button' class="btn btn-secondary" id='last1'> Add <i class="fas fa-cart-plus"></i> </button> <input type='text' id='total1'> </div>
+                        <div><button type='button' class="btn btn-secondary"  id='goform1'> Continue </button></div>
+                        </div>
+                  </div>
+                  <div id="tabs-3">
+                      <div>
+                          <div> <label>Quantity:</label> </div>
+                          
+                          <label> Brownies </label> <input type='text' name='size' checked='checked' id='quantity4' />
+                          <label > Chocolate lava </label> <input type='text' name='size' id='quantity5' />
+                          <label> Fudge Brownies </label> <input type='text' name='size' id='quantity6' /><br>
+                      
+                        
+                          <div><button type='button' class="btn btn-secondary" id='last2'> Add <i class="fas fa-cart-plus"></i> </button> <input type='text' id='total2'></div>
+                          <div><button type='button' class="btn btn-secondary"  id='goform2'> Continue </button></div>
+                        </div>
+                    
+                    </div>
+                    <div id="tabs-4">
+                        <div>
+                            <div> <label>Quantity:</label> </div>
+                            
+                            <label> Coke </label> <input type='text' name='size' checked='checked' id='quantity7' />
+                            <label > Sprite </label> <input type='text' name='size' id='quantity8' />
+                            <label> Fanta </label> <input type='text' name='size' id='quantity9' />
+                           
+                            <div><button type='button' class="btn btn-secondary" id='last3'> Add <i class="fas fa-cart-plus"></i> </button> <input type='text' id='total3'></div>
+                            <div><button type='button' class="btn btn-secondary"  id='goform3'> Continue </button></div>
+                          </div>
+                    
+                      </div>
+                    </form>
+                    </div>
+
+                  </div>
+                   
+                <!--Wings-->
+              <div class='container' id='two'> 
+                  <h2>Wings</h2>
+                <div class='spizza'>
+                  <div>Boneless</div>
+                  <div><img src="Picture/boneless.jpg" width='300' height='350'>
+                    <div class="price"><button type='button' class="btn btn-success"id='button4'>$.6/wing</button></div>
+                  </div>
+
+                </div>
+                <div class='mpizza'>
+                    <div>Spicy Buffolo</div>
+                  <div><img src="Picture/buffolo.jpg" width='300' height='350'></div>
+                  <div class="price"><button type='button' class="btn btn-success" id='button5'>$.6/wing</button></div>
+
+                  </div>
+                  <div class='lpizza'>
+                      <div>Jalapeno</div>
+                  <div><img src="Picture/jalapeno.jpg" width='300' height='350'></div>
+                  <div class="price"><button type='button' class="btn btn-success" id='button6'>$.6/wing</button></div>
+                      </div>
+  
+  
+                </div>
+                <!--Deserts-->
+                <div class='container' id='three'> 
+                    <h2>Desserts</h2>
+                <div class='spizza'>
+                  <div>Brownies</div>
+                  <div><img src="Picture/brown.jpg" width='300' height='350'>
+                    <div class="price"><button type='button' class="btn btn-success" id='button7' >$4.99</button></div>
+                  </div>
+
+                </div>
+                <div class='mpizza'>
+                    <div>Lava Cake</div>
+                  <div><img src="Picture/lava.jpeg" width='300' height='350'></div>
+                  <div class="price"><button type='button' class="btn btn-success" id='button8'>$4.99</button></div>
+
+                  </div>
+                  <div class='lpizza'>
+                      <div>Fudge Brownies</div>
+                  <div><img src="Picture/fudge.jpg" width='300' height='350'></div>
+                  <div class="price"><button type='button' class="btn btn-success" id='button9'>$4.99</button></div>
+                  </div>
+    
+    
+                  </div>
+                  <!--Drinks-->
+                  <div class='container' id='four'> 
+                      <h2>Drinks</h2>
+                <div class='spizza'>
+                  <div>Coke</div>
+                  <div><img src="Picture/coke.jpg" width='300' height='350'>
+                    <div class="price"><button type='button' class="btn btn-success" id='button10'>$1.99</button></div>
+                  </div>
+
+                </div>
+                <div class='mpizza'>
+                    <div>Sprite</div>
+                  <div><img src="Picture/sprite.jpg" width='300' height='350'></div>
+                  <div class="price"><button type='button' class="btn btn-success" id='button11'>$1.99</button></div>
+
+                  </div>
+                  <div class='lpizza'>
+                      <div>Fanta</div>
+                  <div><img src="Picture/fanta.jpg" width='300' height='350'></div>
+                  <div class="price"><button type='button' class="btn btn-success" id='button12'>$1.99</button></div>
+                  </div>
+      
+                    </div>
+                    <!--Form fill out-->
+                    <div class='important'>
+                  
+                     
+                      <form class='validate'>
+                          <fieldset>
+                              <legend>Personal information</legend>
+
+                        <p>Name <input type='text'  id='change' placeholder="first" required> <input type='text'  id='change' placeholder="last" required></p>
+                        <p>Email <input type='email'  placeholder='email' required title='Please enter valid email'></p>
+                        <p>Address <input type='text' placeholder='street' id='change' >
+                          <input type='text'  placeholder='city' id='change'> <input type='text'  placeholder='nj' ></p>
+                          <p>Phone <input type='number' maxlength="3"> - <input type='number' maxlength="3"> - <input type='number' maxlength="4"> </p>
+                          <p> <textarea rows='4' cols='30' placeholder="Additional comments about delivery"></textarea></p>
+                          <p> Order Date <input type='date'> <input type='time'> </p>
+                          <p>Credit/Debit info <select>
+                            <option>Visa</option>
+                            <option>Amex</option>
+                            <option>Mastercard</option>
+                           
+                          </select> </p>
+                          <p>Credit number: <input type='number'> - <input type='number'> - <input type='number'> - <input type='number'> <input type='number' placeholder="cvv"></p>
+
+                       
+                        <p>  <input type='submit'></p>
+                      </fieldset>
+                      </form>
+                    
+                 
+                    </div>
+                    
+               <!--Javascript file linker--> 
+         <script src='pizza.js'></script>
+
+       
+        
+        
+    </body>
+</html>
